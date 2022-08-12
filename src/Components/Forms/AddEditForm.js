@@ -43,7 +43,7 @@ class AddEditForm extends React.Component {
 
   submitFormEdit = e => {
     e.preventDefault()
-    fetch(`https://pwn-lfos-3.herokuapp.com/api/filmes${id}`, {
+    fetch(`https://pwn-lfos-3.herokuapp.com/api/filmes/${id}`, {
       method: 'put',
       headers: {
         'Content-Type': 'application/json'
