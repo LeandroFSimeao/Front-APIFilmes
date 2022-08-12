@@ -10,7 +10,7 @@ class App extends Component {
   }
 
   getItems(){
-    fetch('http://localhost:3001/api/filmes')
+    fetch('https://pwn-lfos-3.herokuapp.com/api/filmes')
       .then(response => response.json())
       .then(items => this.setState({items}))
       .catch(err => console.log(err))
